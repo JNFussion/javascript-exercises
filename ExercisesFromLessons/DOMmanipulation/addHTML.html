@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+    <h1>
+        THE TITLE OF YOUR WEBPAGE
+    </h1>
+    <div id="container"></div>
+</body>
+
+
+</html>
+
+<script>
+    const container = document.querySelector('#container');
+
+    const content = document.createElement('div');
+    content.classList.add('content');
+    content.textContent = 'This is the glorious text-content!';
+
+    container.appendChild(content);
+
+    const redPar = document.createElement('p');
+    redPar.classList.add('red');
+    redPar.style.color = 'red';
+    redPar.textContent = "Hey i'm red";
+    container.appendChild(redPar);
+
+    const bluePar = document.createElement('h3');
+    bluePar.classList.add('blue');
+    bluePar.style.color = 'blue';
+    bluePar.textContent = "Hey i'm blue";
+    container.appendChild(bluePar);
+
+    const pinkDiv = document.createElement('div');
+    pinkDiv.classList.add('pink');
+    pinkDiv.setAttribute('style', 'border: 1px solid black; background: pink;')
+    container.appendChild(pinkDiv);
+
+    const h1 = document.createElement('h1');
+    h1.textContent = "I'm in a div";
+    pinkDiv.appendChild(h1);
+
+    const p = document.createElement('p');
+    p.textContent = "ME TOO!";
+    pinkDiv.appendChild(p);
+
+
+</script>

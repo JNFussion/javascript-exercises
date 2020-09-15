@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+    <!--
+    <button onclick="alert('Hello World')">Click me</button>
+    <button id="btn">Click me</button>
+    <button id="btn1">Click me Too</button>
+    -->
+
+    <div id="cotainer">
+        <button id="1">CLick me</button>
+        <button id="2">Click me</button>
+        <button id="3">Click me</button>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    /* 3 diferrent methods of add a event
+    const btn = document.querySelector('#btn');
+    btn.onclick = () => alert("Hello World");
+
+
+    const btn1 = document.querySelector('#btn1');
+    btn1.addEventListener('click', () => {
+        alert("Hello World");
+    });
+
+    btn.addEventListener('click', function (e) {
+        console.log(e);
+    });
+    btn.addEventListener('click', function (e) {
+        console.log(e.target);
+    });
+    btn.addEventListener('click', function (e) {
+        e.target.style.background = 'blue';
+    });
+    */
+    
+    const buttons = document.querySelectorAll('button');
+
+    buttons.forEach((button) =>{
+        button.addEventListener('click', () =>{
+            alert(button.id);
+        });
+    });
+
+
+</script>
